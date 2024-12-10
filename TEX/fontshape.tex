@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{ctex}
+\begin{document}
+Text can be \emph{emphasized}.
+
+Besides from \textit{italics}, words can be \textbf{bold}, \textsl{slanted}, or typeset in \textsc {Small Caps}.
+
+Such commands can be \textit{\textbf{nested}}.
+
+\emph{See how \emph{emphasizing} looks when nested.}
+
+我们使用 \textbackslash emph 命令，并将一个单词作为该命令的参数。此参数将以斜体排版，因为这是 \LaTeX 强调文本的默认方式。文本格式化命令通常类似于\textbackslash text**{argument}，其中 ** 代表两个字母的缩写，例如 bf 代表粗体，it 代表斜体，sl 代表倾斜。
+
+大多数字体命令应用两次都会产生相同的效果，例如 \textbackslash textbf\{\textbackslash textbf\{words\}\}。此时，单词不会变得更粗。
+
+但是 \textbackslash emph 的行为有所不同。\textbackslash emph将文本更改为斜体，但如果我们在已经是斜体的文本上使用\textbackslash emph ，它将从斜体变为直立字体。
+
+\textbf{组合字体形状（例如同时标记粗体和斜体）可能被视为一种有问题的样式选择，需要明智且一致地更改字体形状。}
+\end{document}
